@@ -19,7 +19,7 @@ const GamersPage = () => {
     <>
       <h1>All the gamers</h1>
       <ul>
-        {gamers.map(gamer => (
+        {gamers?.map(gamer => (
           <li key={gamer.id}>
             <h3>{gamer.firstname}</h3>
             <ul>
@@ -29,7 +29,7 @@ const GamersPage = () => {
             </ul>
             <h4>Play Sessions</h4>
             <ul>
-              {gamer.playSessions.map(playSession => (
+              {gamer?.playSessions?.map(playSession => (
                 <li key={playSession.id}>
                   <p>
                     {playSession.game} - {playSession.playTime} minutes
