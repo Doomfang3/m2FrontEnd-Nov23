@@ -23,7 +23,7 @@ const GamersPage = () => {
           <li key={gamer.id}>
             <h3>{gamer.firstname}</h3>
             <ul>
-              {gamer.hobbies.map(hobby => (
+              {gamer?.hobbies?.map(hobby => (
                 <li key={hobby}>{hobby}</li>
               ))}
             </ul>
